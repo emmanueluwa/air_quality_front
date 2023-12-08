@@ -2,7 +2,7 @@
 
 ## What will I be building?
 
-- This project aims to create a real-time air quality monitoring dashboard that retrieves data from the OpenAQ API. The backend is built using Node.js and utilizes external APIs to gather air quality information from various locations around the world, the code can be found here:
+- This project aims to create a real-time air quality monitoring dashboard that retrieves data from the OpenAQ API. The backend is built using Node.js and utilizes external APIs to gather air quality information from various locations around the world, the code can be found here: https://github.com/emmanueluwa/air_quality_back
 
 - The frontend, written in React, provides an interactive and user-friendly interface for analyzing the collected data
 
@@ -16,16 +16,15 @@
 
 ## Why Air Quality Monitoring?
 
-Air quality is a critical environmental factor that directly impacts public health. Monitoring air quality helps in understanding pollution levels, identifying potential health risks, and making informed decisions to improve overall air quality.
+- Air quality is a critical environmental factor that directly impacts public health. Monitoring air quality helps in understanding pollution levels, identifying potential health risks, and making informed decisions to improve overall air quality.
 
 ## Technologies Used
 
-React
-TypeScript
-External APIs (OpenAQ)
-Interactive charts and visualizations D3.js
-Project Features
+- React
+- TypeScript
+- APIs
+- Interactive charts and visualizations D3.js
 
 ## Acknowledgments
 
-Special thanks to OpenAQ for providing the API and enabling access to valuable air quality data.
+- Special thanks to OpenAQ for providing the API and enabling access to valuable air quality data. https://openaq.org/
