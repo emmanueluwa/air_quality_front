@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import AirQualityChart from "../components/AirQualityChart";
 
 interface QualityData {
   meta: {
@@ -49,7 +50,8 @@ function Index() {
   return (
     <>
       <h1>Air Quality Data</h1>
-      {qualityData?.results.map((result, index) => (
+      <AirQualityChart data={qualityData} />
+      {/* {qualityData?.results.map((result, index) => (
         <div key={index}>
           <p>Location: {result.location}</p>
           <p>Parameter: {result.parameter}</p>
@@ -57,7 +59,7 @@ function Index() {
           <p>Unit: {result.unit}</p>
           <p>Date (UTC): {result.date?.utc}</p>
         </div>
-      ))}
+      ))} */}
     </>
   );
 }
