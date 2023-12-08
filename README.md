@@ -1,40 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Air Quality Monitoring Dashboard
 
-## Getting Started
+## What will I be building?
 
-First, run the development server:
+- This project aims to create a real-time air quality monitoring dashboard that retrieves data from the OpenAQ API. The backend is built using Node.js and utilizes external APIs to gather air quality information from various locations around the world, the code can be found here:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- The frontend, written in React, provides an interactive and user-friendly interface for analyzing the collected data
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Overview
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### What is OpenAQ?
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- https://openaq.org/
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- OpenAQ is an platform that provides real-time and historical air quality data from various locations globally. It offers a comprehensive API that allows developers to access air quality information for different parameters such as PM2.5, PM10, temperature, and more. (https://en.wikipedia.org/wiki/Air_quality_index)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Why Air Quality Monitoring?
 
-## Learn More
+Air quality is a critical environmental factor that directly impacts public health. Monitoring air quality helps in understanding pollution levels, identifying potential health risks, and making informed decisions to improve overall air quality.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+React
+TypeScript
+External APIs (OpenAQ)
+Interactive charts and visualizations D3.js
+Project Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Acknowledgments
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Special thanks to OpenAQ for providing the API and enabling access to valuable air quality data.
