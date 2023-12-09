@@ -27,12 +27,8 @@ const AirQualityChart = ({ airQualityData, width, height }) => {
 
     //GeoJSON object
     //creating a basic map
-    const projection = d3
-      .geoMercator()
-      .scale(180)
-      .center([0, 0])
-      .translate([width / 2, height / 2]);
-    const path = d3.geoPath().projection(projection);
+    const projection = d3.geoEqualEarth();
+    const path = d3.geoPath(projection);
 
     // Append a SVG element to your HTML where the map will be drawn
     const svg = d3

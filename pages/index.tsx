@@ -25,8 +25,8 @@ function Index() {
       <h1>Air Quality Data</h1>
       <AirQualityChart
         airQualityData={qualityData?.results}
-        width={800}
-        height={500}
+        width={2000}
+        height={2000}
       />
       {/* {qualityData?.results.map((result, index) => (
         <div key={index}>
