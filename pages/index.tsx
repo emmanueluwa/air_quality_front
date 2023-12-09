@@ -1,56 +1,33 @@
 import React, { useEffect, useState } from "react";
 import AirQualityChart from "../components/AirQualityChart";
-
-interface QualityData {
-  meta: {
-    name: string;
-    license: string;
-    website: string;
-    page: number;
-    limit: number;
-    found: string;
-  };
-  results: Result[];
-}
-
-interface Result {
-  locationId: number;
-  location: string;
-  parameter: string;
-  value: number;
-  date: {
-    utc: string;
-    local: string;
-  };
-  unit: string;
-  coordinates: {
-    latitude: number;
-    longitude: number;
-  };
-  country: string;
-  city: string | null;
-  isMobile: boolean;
-  isAnalysis: boolean | null;
-  entity: string;
-  sensorType: string;
-}
+import { getData } from "@/utils/getData";
+import { QualityData } from "@/utils/types";
 
 function Index() {
   const [qualityData, setQualityData] = useState<QualityData | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api")
-      .then((response) => response.json())
-      .then((data: QualityData) => {
-        console.log(data);
+    const fetchData = async () => {
+      try {
+        const data = await getData();
         setQualityData(data);
-      });
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
   }, []);
+  console.log("data from index", qualityData);
 
   return (
     <>
       <h1>Air Quality Data</h1>
-      <AirQualityChart data={qualityData} />
+      <AirQualityChart
+        airQualityData={qualityData?.results}
+        width={800}
+        height={500}
+      />
       {/* {qualityData?.results.map((result, index) => (
         <div key={index}>
           <p>Location: {result.location}</p>
