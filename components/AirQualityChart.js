@@ -83,7 +83,7 @@ const AirQualityChart = ({ airQualityData, width, height }) => {
 
     legend
       .selectAll("text")
-      .data(["Low", "Medium", "High"]) // Adjust labels based on your data
+      .data(["Low", "Medium", "High"])
       .enter()
       .append("text")
       .attr("x", 30)

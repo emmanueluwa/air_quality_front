@@ -28,3 +28,7 @@
 ## Acknowledgments
 
 - Special thanks to OpenAQ for providing the API and enabling access to valuable air quality data. https://openaq.org/
+
+### I have managed to display some of the json data in a Geospatial data graph using the air quality value, the country of the source and the coordinates as parameters
+
+![Screenshot](doc/ss.png)
